@@ -1,6 +1,0 @@
-namespace WebAppNumerosRomanos.Areas.HelpPage.ModelDescriptions
-{
-    public class SimpleTypeModelDescription : ModelDescription
-    {
-    }
-}

@@ -1,25 +1,25 @@
-﻿using System.Web.Mvc;
+﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WebAppNumerosRomanos;
 using WebAppNumerosRomanos.Controllers;
+using System.Collections.Generic;
 
 namespace WebAppNumerosRomanos.Tests.Controllers
 {
     [TestClass]
-    public class HomeControllerTest
+    public class ConvertNumberTest
     {
         [TestMethod]
-        public void Index()
+        public void Get()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            ConvertNumberController controller = new ConvertNumberController();
 
             // Act
-            ViewResult result = controller.Index() as ViewResult;
+            string result = controller.Get(1);
 
             // Assert
             Assert.IsNotNull(result);
-            Assert.AreEqual("Home Page", result.ViewBag.Title);
+            Assert.AreEqual("I", result);
         }
     }
 }
