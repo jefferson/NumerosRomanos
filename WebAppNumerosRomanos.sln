@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppNumerosRomanos", "WebAppNumerosRomanos\WebAppNumerosRomanos.csproj", "{CB1214A8-B7DE-408E-9CC3-9D5690040CD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppNumerosRomanos.Tests", "WebAppNumerosRomanos.Tests\WebAppNumerosRomanos.Tests.csproj", "{E56E56A9-C8F9-4B90-94CF-E74BC189726A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB1214A8-B7DE-408E-9CC3-9D5690040CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB1214A8-B7DE-408E-9CC3-9D5690040CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB1214A8-B7DE-408E-9CC3-9D5690040CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB1214A8-B7DE-408E-9CC3-9D5690040CD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E56E56A9-C8F9-4B90-94CF-E74BC189726A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E56E56A9-C8F9-4B90-94CF-E74BC189726A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E56E56A9-C8F9-4B90-94CF-E74BC189726A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E56E56A9-C8F9-4B90-94CF-E74BC189726A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {384924A6-6002-4F03-943A-83D699D3CEF1}
+	EndGlobalSection
+EndGlobal
