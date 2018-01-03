@@ -18,6 +18,9 @@ namespace WebAppNumerosRomanos.Models
 
 
 
+            if (number >= 4)
+                return "IV" + toRoman(number - 4);
+
             if (number >= 1)
                 return "I" + toRoman(number - 1);
 
