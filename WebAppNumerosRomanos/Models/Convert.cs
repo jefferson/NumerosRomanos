@@ -16,6 +16,33 @@ namespace WebAppNumerosRomanos.Models
             if (number < 1)
                 return String.Empty;
 
+            if (number >= 1000)
+                return "M" + toRoman(number - 1000);
+
+            if (number >= 900)
+                return "CM" + toRoman(number - 900);
+
+            if (number >= 500)
+                return "D" + toRoman(number - 500);
+
+            if (number >= 400)
+                return "CD" + toRoman(number - 400);
+
+            if (number >= 100)
+                return "C" + toRoman(number - 100);
+
+            if (number >= 90)
+                return "XC" + toRoman(number - 90);
+
+            if (number >= 50)
+                return "L" + toRoman(number - 50);
+
+            if (number >= 40)
+                return "XL" + toRoman(number - 40);
+
+            if (number >= 10)
+                return "X" + toRoman(number - 10);
+
             if (number >= 9)
                 return "IX" + toRoman(number - 9);
 

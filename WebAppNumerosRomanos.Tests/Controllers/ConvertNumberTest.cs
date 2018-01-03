@@ -48,5 +48,20 @@ namespace WebAppNumerosRomanos.Tests.Controllers
             Assert.AreEqual(Models.Convert.toRoman(6), "VI");
             Assert.AreEqual(Models.Convert.toRoman(7), "VII");
         }
+
+        [TestMethod]
+        public void TestCentemas()
+        {
+            Assert.AreEqual(Models.Convert.toRoman(10), "X");
+            Assert.AreEqual(Models.Convert.toRoman(40), "XL");
+            Assert.AreEqual(Models.Convert.toRoman(50), "L");
+            Assert.AreEqual(Models.Convert.toRoman(90), "XC");
+            Assert.AreEqual(Models.Convert.toRoman(100), "C");
+            Assert.AreEqual(Models.Convert.toRoman(400), "CD");
+            Assert.AreEqual(Models.Convert.toRoman(500), "D");
+            Assert.AreEqual(Models.Convert.toRoman(900), "CM");
+            Assert.AreEqual(Models.Convert.toRoman(1000), "M");
+        }
     }
 }
+
