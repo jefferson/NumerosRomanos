@@ -16,7 +16,7 @@ namespace WebAppNumerosRomanos
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "ConvertNumber", action = "Get" }
+                defaults: new { controller = "Convert", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

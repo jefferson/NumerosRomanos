@@ -7,12 +7,23 @@ using System.Web.Http;
 
 namespace WebAppNumerosRomanos.Controllers
 {
-    public class ConvertNumberController : ApiController
+    public class ConvertController : ApiController
     {
+        
         // GET api/values/5
-        public string Get(int number)
+        public string Get(int id)
+        {
+            WebAppNumerosRomanos.Models.Convert.toRoman(112);
+
+            return "value";
+        }
+
+        // GET api/values/5
+        public string Get()
         {
             return "value";
         }
+
+
     }
 }

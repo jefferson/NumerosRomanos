@@ -6,20 +6,16 @@ using System.Collections.Generic;
 namespace WebAppNumerosRomanos.Tests.Controllers
 {
     [TestClass]
-    public class ConvertNumberTest
+    public class ConvertTest
     {
         [TestMethod]
-        public void Get()
+        public void NumeroMenorQueUm()
         {
-            // Arrange
-            ConvertNumberController controller = new ConvertNumberController();
 
-            // Act
-            string result = controller.Get(1);
+            Assert.AreEqual(Models.Convert.toRoman(-1), String.Empty);
+            Assert.AreEqual(Models.Convert.toRoman(0), String.Empty);
+            Assert.AreEqual(Models.Convert.toRoman(-14), String.Empty);
 
-            // Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual("I", result);
         }
     }
 }

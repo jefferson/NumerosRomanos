@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Web;
 
 namespace WebAppNumerosRomanos.Models
@@ -9,7 +10,11 @@ namespace WebAppNumerosRomanos.Models
     {
         public static string toRoman(int number)
         {
-            return number.ToString();
+            if (number < 1)
+                return String.Empty;
+
+
+            return String.Empty;
         }
     }
 }
