@@ -10,9 +10,16 @@ namespace WebAppNumerosRomanos.Models
     {
         public static string toRoman(int number)
         {
+            if ((number < 0) || (number) > 3999)
+                return String.Empty;
+
             if (number < 1)
                 return String.Empty;
 
+
+
+            if (number >= 1)
+                return "I" + toRoman(number - 1);
 
             return String.Empty;
         }

@@ -17,5 +17,20 @@ namespace WebAppNumerosRomanos.Tests.Controllers
             Assert.AreEqual(Models.Convert.toRoman(-14), String.Empty);
 
         }
+
+        [TestMethod]
+        public void NumeroMaiorQue3999()
+        {
+
+            Assert.AreEqual(Models.Convert.toRoman(4000), String.Empty);
+            Assert.AreEqual(Models.Convert.toRoman(5000), String.Empty);
+
+        }
+
+        [TestMethod]
+        public void NumeroIgualUm()
+        {
+            Assert.AreEqual(Models.Convert.toRoman(1), "I");
+        }
     }
 }
