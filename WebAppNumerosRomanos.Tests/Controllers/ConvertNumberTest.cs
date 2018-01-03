@@ -40,5 +40,13 @@ namespace WebAppNumerosRomanos.Tests.Controllers
             Assert.AreEqual(Models.Convert.toRoman(3), "III");
             Assert.AreEqual(Models.Convert.toRoman(2), "II");
         }
+
+        [TestMethod]
+        public void NumeroMenorIgualQCinco()
+        {
+            Assert.AreEqual(Models.Convert.toRoman(5), "V");
+            Assert.AreEqual(Models.Convert.toRoman(6), "VI");
+            Assert.AreEqual(Models.Convert.toRoman(7), "VII");
+        }
     }
 }

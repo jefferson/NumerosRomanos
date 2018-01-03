@@ -16,7 +16,11 @@ namespace WebAppNumerosRomanos.Models
             if (number < 1)
                 return String.Empty;
 
+            if (number >= 9)
+                return "IX" + toRoman(number - 9);
 
+            if (number >= 5)
+                return "V" + toRoman(number - 5);
 
             if (number >= 4)
                 return "IV" + toRoman(number - 4);
